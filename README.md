@@ -5,14 +5,23 @@ This repository contains codes and information to re-present the Ribo-seq analys
 ## Requirements
 
 - Python3 >= 3.11
+
 - biobrary == 0.1.4
+
     A Python3 module, can be installed using `pip install biobrary==0.1.4`.
+
 - annoread == v0.1
+
     The code for this utility has already been copied to the corresponding directories of this workflow, so you do not need to install it separately. The code is also available at https://github.com/benjaminfang/annoread.
+
 - matplotlib
+
 - numpy
+
 - pandas
+
 - cutadapt == 4.6
+
 - bowtie2 == 2.5.2
 
 ## Installation
@@ -27,7 +36,7 @@ All scripts in this workflow are programmed using Python or Bash, so you can run
 
 3. Extract mRNA and non-coding RNA sequences from the transcriptomic reference data and place them under ${working_dir}/ref_data. Then, use Bowtie2 to index the reference data. Replace the existing directories/files under \${working_dir}/ref_data with the newly indexed directories/files.
 
-4. Navigate to the 'low-dose' directory, then change into each subdirectory (1-qc-mapping-ribo-seq, 2-qc-mapping-rna-seq, 3-reads-annotation-and-counting, 4-read-distribution-along-mRNA, 5-ribosome-density, and 6-reads-coverage-of-genes) in order, and run the Bash script under scripts directory..
+4. Navigate to the 'low-dose' directory, then change into each subdirectory (1-qc-mapping-ribo-seq, 2-qc-mapping-rna-seq, 3-reads-annotation-and-counting, 4-read-distribution-along-mRNA, 5-ribosome-density, and 6-reads-coverage-of-genes) in order, and run the Bash script under scripts directory.
 
 5. Perform the same operation for the high-dose data.
 
