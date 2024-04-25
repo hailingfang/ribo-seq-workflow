@@ -1,5 +1,5 @@
 working_dire=/home/fanghl/work/sdu/lutong/ribo-seq/run-20240411/working_dire
-script_dire=${working_idre}/high-dose/2-qc-mapping-rna-seq/scripts
+script_dire=${working_dire}/high-dose/2-qc-mapping-rna-seq/scripts
 raw_data=${working_dire}/high-dose/raw-data/rna-seq
 clean_data=${working_dire}/high-dose/2-qc-mapping-rna-seq/1-clean-data
 mapped_data=${working_dire}/high-dose/2-qc-mapping-rna-seq/2-mapped-data
