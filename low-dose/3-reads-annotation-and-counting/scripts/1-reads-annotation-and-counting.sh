@@ -3,9 +3,9 @@ script_dire=${working_dire}/low-dose/3-reads-annotation-and-counting/scripts
 ref_data=${working_dire}/ref_data
 ribo_mapped_data=${working_dire}/low-dose/1-qc-mapping-ribo-seq/2-mapped-data
 rna_mapped_data=${working_dire}/low-dose/2-qc-mapping-rna-seq/2-mapped-data
-anno_res=${working_dire}/3-reads-annotation-and-counting/1-read-anno
-assign_res=${working_dire}/3-reads-annotation-and-counting/2-reads-assigned
-count_res=${working_dire}/3-reads-annotation-and-counting/3-count-mtx
+anno_res=${working_dire}/low-dose/3-reads-annotation-and-counting/1-read-anno
+assign_res=${working_dire}/low-dose/3-reads-annotation-and-counting/2-reads-assigned
+count_res=${working_dire}/low-dose/3-reads-annotation-and-counting/3-count-mtx
 
 #read annotation
 for ((i=1; i<3; i++))

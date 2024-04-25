@@ -1,5 +1,5 @@
 working_dire=/home/fanghl/work/sdu/lutong/ribo-seq/run-20240411/working_dire
-script_dire=${working_idre}/low-dose/1-qc-mapping-ribo-seq/scripts
+script_dire=${working_dire}/low-dose/1-qc-mapping-ribo-seq/scripts
 raw_data=${working_dire}/low-dose/raw-data/ribo-seq
 clean_data=${working_dire}/low-dose/1-qc-mapping-ribo-seq/1-clean-data
 mapped_data=${working_dire}/low-dose/1-qc-mapping-ribo-seq/2-mapped-data
@@ -28,6 +28,13 @@ do
         ${raw_data}/un_${i}.raw.1.fastq.gz \
         ${raw_data}/un_${i}.raw.2.fastq.gz
 done
+
+python3 ${script_dire}/stats-fastq.py \
+    ${clean_data}/dsR_1-clean.R1.fastq.gz \
+    ${clean_data}/dsR_2-clean.R1.fastq.gz \
+    ${clean_data}/un_1-clean.R1.fastq.gz \
+    ${clean_data}/un_2-clean.R1.fastq.gz
+
 
 #mapping
 #map-to-rRNA and statistic

@@ -1,4 +1,4 @@
-wording_dire="/home/fanghl/work/sdu/lutong/ribo-seq/run-20240411/working_dire"
+working_dire="/home/fanghl/work/sdu/lutong/ribo-seq/run-20240411/working_dire"
 assigned_read=${working_dire}/low-dose/3-reads-annotation-and-counting/2-reads-assigned
 read_pos_res=${working_dire}/low-dose/4-read-distribution-along-mRNA/1-read-pos
 script_dire=${working_dire}/low-dose/4-read-distribution-along-mRNA/scripts
@@ -7,22 +7,22 @@ for ((i=1; i<3; i++))
 do
     python3 ${script_dire}/position-relative-to-start-stop-codon.py \
         --out ${read_pos_res}/ribo-seq/dsR-${i}-codon \
-        ${assign_read}/ribo-seq/dsR-${i}-uniqued.rdpos
+        ${assigned_read}/ribo-seq/dsR-${i}-assigned.rdpos
 
-    python3 ${script_dire}/2-position-relative-to-start-stop-codon.py \
+    python3 ${script_dire}/position-relative-to-start-stop-codon.py \
         --out ${read_pos_res}/ribo-seq/un-${i}-codon \
-        ${assign_read}/ribo-seq/un-${i}-uniqued.rdpos
+        ${assigned_read}/ribo-seq/un-${i}-assigned.rdpos
 done
 
 for ((i=1; i<4; i++))
 do
-    python3 ${script_dire}/2-position-relative-to-start-stop-codon.py \
+    python3 ${script_dire}/position-relative-to-start-stop-codon.py \
         --out ${read_pos_res}/rna-seq/dsR-${i}-codon \
-        ${assigned_read}/rna-seq/dsR-${i}-uniqued.rdpos
+        ${assigned_read}/rna-seq/dsR-${i}-assigned.rdpos
 
-    python3 ${script_dire}/2-position-relative-to-start-stop-codon.py \
+    python3 ${script_dire}/position-relative-to-start-stop-codon.py \
         --out ${read_pos_res}/rna-seq/un-${i}-codon \
-        ${assign_read}/rna-seq/un-${i}-uniqued.rdpos
+        ${assigned_read}/rna-seq/un-${i}-assigned.rdpos
 done
 
 python3 ${script_dire}/plot-read-postion-and-distribution.py \
