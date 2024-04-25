@@ -1,37 +1,34 @@
 # Ribo-seq Analysis Workflow
 
-This repository contain codes and information to re-present the ribo-seq analysis of the paper.
+This repository contains codes and information to re-present the Ribo-seq analyses in our published paper.
 
 ## Requirements
 
 - Python3 >= 3.11
 - biobrary == 0.1.4
-    A python3 module, can be installed by `pip install biobrary==0.1.4`
+    A Python3 module, can be installed using `pip install biobrary==0.1.4`.
 - annoread == v0.1
-    The code of this project has been copied to corresponding directories, you do not need to install it sepratly. The code is also avaiable at
-    https://github.com/benjaminfang/annoread.
+    The code for this utility has already been copied to the corresponding directories of this workflow, so you do not need to install it separately. The code is also available at https://github.com/benjaminfang/annoread.
 - matplotlib
 - numpy
 - pandas
-- scipy
 - cutadapt == 4.6
 - bowtie2 == 2.5.2
 
 ## Installation
 
-All scripts in this workflow is programmed using Python or Bash. So you can run those script directly after you have install the requirement.
+All scripts in this workflow are programmed using Python or Bash, so you can run those scripts directly after you have installed the requirements.
 
 ## Usage
 
-1. Download the Ribo-seq and RNA-seq raw data from NCBI as well as the reference data.
+1. Download the Ribo-seq and RNA-seq raw data from NCBI, as well as the transcriptomic reference data and the GTF data.
 
-2. Place the raw data under corresponding directories.
+2. Place the raw data under the corresponding 'raw_data' directories in the 'low-dose' or 'high-dose' directories, respectively.
 
-3. Extract mRNA and non-coding RNA infromation from GCF_000002035.6_GRCz11_rna_from_genomic.fna. And place it under ${working_dire}/ref_data.
+3. Extract mRNA and non-coding RNA sequences from the transcriptomic reference data and place them under ${working_dir}/ref_data. Then, use Bowtie2 to index the reference data. Replace the existing directories/files under \${working_dir}/ref_data with the newly indexed directories/files.
 
-4. Make index of reference transcriptome using bowtie2 for all-RNA, mRNA and
-non-coding RNA. And place it under ${working_dire}/ref_data.
+4. Navigate to the 'low-dose' directory, then change into each subdirectory (1-qc-mapping-ribo-seq, 2-qc-mapping-rna-seq, 3-reads-annotation-and-counting, 4-read-distribution-along-mRNA, 5-ribosome-density, and 6-reads-coverage-of-genes) in order, and run the Bash script under scripts directory..
 
-5. Go to low-dose directory, and change direcory into 1-*/scripts direcotory in order. And run the Bash script.
+5. Perform the same operation for the high-dose data.
 
-6. Do same operation for high-dose data.
+## References
