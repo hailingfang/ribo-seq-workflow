@@ -41,4 +41,4 @@ All scripts in this workflow are programmed using Python or Bash, so you can run
 5. Perform the same operation for the high-dose data.
 
 ## Citations
-Tong, Lu, et al. Double-stranded RNA triggers a distinct innate immune response in the early embryo. (under review)
+Tong Lu. et al. Double-stranded RNA triggers a distinct innate immune response in the early embryo. (under review)
