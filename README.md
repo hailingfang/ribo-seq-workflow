@@ -10,7 +10,7 @@ This repository contains codes and information to re-present the Ribo-seq analys
 
     A Python3 module, can be installed using `pip install biobrary==0.1.4`.
 
-- annoread == v0.1
+- annoread == 0.1
 
     The code for this utility has already been copied to the corresponding directories of this workflow, so you do not need to install it separately. The code is also available at https://github.com/benjaminfang/annoread.
 
