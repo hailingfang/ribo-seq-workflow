@@ -50,9 +50,9 @@ as well as the transcriptomic reference data and the GTF data.
 directories in the 'low-dose' or 'high-dose' directories, respectively.
 
 3. Extract mRNA and non-coding RNA sequences from the transcriptomic
-reference data and place them under ${working_dir}/ref_data.
+reference data and place them under "${working_dir}/ref_data".
 Then, use Bowtie2 to index the reference data. Replace the
-existing directories/files under \${working_dir}/ref_data 
+existing directories/files under "${working_dir}/ref_data" 
 with the newly indexed directories/files.
 
 4. Navigate to the 'low-dose' directory, then change into each 
