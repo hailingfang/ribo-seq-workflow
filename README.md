@@ -1,6 +1,11 @@
-# Ribo-seq Analysis Workflow
+# The Ribo-seq Analysis Workflow
 
-This repository contains codes and information to re-present the Ribo-seq analyses in our published paper.
+This repository contains code and information to reproduce
+the Ribo-seq analysis in our *paper* currently
+under submission.
+
+For any inquiries or assistance needed, please don't hesitate
+to contact us at shaoming@sdu.edu.cn.
 
 ## Requirements
 
@@ -24,6 +29,8 @@ This repository contains codes and information to re-present the Ribo-seq analys
 
 - bowtie2 == 2.5.2
 
+- samtools == 1.18
+
 ## Installation
 
 All scripts in this workflow are programmed using Python or Bash, so you can run those scripts directly after you have installed the requirements.
@@ -41,4 +48,4 @@ All scripts in this workflow are programmed using Python or Bash, so you can run
 5. Perform the same operation for the high-dose data.
 
 ## Citations
-Tong Lu. et al. Double-stranded RNA triggers a distinct innate immune response in the early embryo. (under review)
+Tong Lu. et al. Double-stranded RNA triggers a distinct innate immune response in the early embryo. (under submission)
