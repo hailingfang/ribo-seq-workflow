@@ -11,11 +11,11 @@ to contact us at shaoming@sdu.edu.cn.
 
 - Python3 >= 3.11
 
-- biobrary == 0.1.4
+- biobrary == 0.1.5
 
-    A Python3 module, can be installed using `pip install biobrary==0.1.4`.
+    A Python3 module, can be installed using `pip install biobrary==0.1.5`.
 
-- annoread == 0.1
+- annoread == 0.1.5
 
     The code for this utility has already been copied to the corresponding
     directories of this workflow, so you do not need to install it separately. 
